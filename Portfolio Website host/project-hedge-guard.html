@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hedge Guard Capital Management - Project Details</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        .project-header {
+            padding-top: 120px;
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .project-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 10px;
+            margin-bottom: 80px;
+        }
+
+        .gallery-item {
+            border-radius: 12px;
+            overflow: hidden;
+            height: 300px;
+            border: 1px solid var(--glass-border);
+            position: relative;
+        }
+
+        .gallery-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-item:hover .gallery-img {
+            transform: scale(1.05);
+        }
+
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            color: var(--text-secondary);
+            margin-bottom: 40px;
+            font-size: 0.9rem;
+        }
+
+        .back-link:hover {
+            color: var(--accent-color);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="background-glob"></div>
+    <div class="background-grid"></div>
+
+    <nav class="navbar glass">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">CP.</a>
+            <div class="nav-links">
+                <a href="index.html#work" class="nav-link">Work</a>
+                <a href="index.html#about" class="nav-link">About</a>
+                <a href="index.html#contact" class="nav-link">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container">
+        <div class="project-header">
+            <a href="index.html#work" class="back-link"><i data-lucide="arrow-left"></i> Back to Portfolio</a>
+            <h1 class="headline" style="font-size: 3rem;">Hedge Guard Capital Management</h1>
+            <p class="hero-text" style="max-width: 700px; margin: 0 auto;">
+                A sophisticated platform for managing hedge fund clients, featuring unitized accounting, and Automatic
+                Fee Collection.
+            </p>
+        </div>
+
+        <div class="project-gallery">
+            <!-- Image 1 -->
+            <div class="gallery-item glass">
+                <img src="assets/hedge_guard.png" alt="Dashboard View" class="gallery-img">
+            </div>
+            <!-- Image 2 -->
+            <div class="gallery-item glass">
+                <img src="assets/hedge_guard_2.png" alt="Portfolio Analysis View" class="gallery-img">
+            </div>
+            <!-- Image 3 -->
+            <div class="gallery-item glass">
+                <img src="assets/hedge_guard%203.png" alt="Trading Interface View" class="gallery-img">
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Cody Paulson. Built with <i data-lucide="heart" class="heart-icon"></i>.</p>
+        </div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+
+</html>
